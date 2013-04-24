@@ -72,5 +72,70 @@ $round-pixels: true !default;
   @include modular-scale-list-output($start, $finish, $base-size, $ratio, $ratio-negative, $round-pixels);
 }
 
+
+@function double_octave() {
+  @return 4 / 1.0;
+}
+
+@function major_twelfth() {
+  @return 3 / 1.0;
+}
+
+@function major_eleventh() {
+  @return 8 / 3.0;
+}
+
+@function major_tenth() {
+  @return 5 / 2.0;
+}
+
+@function octave() {
+  @return 2 / 1.0;
+}
+
+@function major_seventh() {
+  @return 15 / 8.0;
+}
+
+@function minor_seventh() {
+  @return 16 /9.0;
+}
+
+@function major_sixth() {
+  @return 5 / 3.0;
+}
+
+@function minor_sixth() {
+  @return 8 / 5.0;
+}
+
+@function fifth() {
+  @return 3 / 2.0;
+}
+
+@function augmented_fourth() {
+  @return sqrt(2) / 1.0;
+}
+
+@function fourth() {
+  @return 4 / 3.0;
+}
+
+@function major_third() {
+  @return 5 / 4.0;
+}
+
+@function minor_third() {
+  @return 6 / 5.0;
+}
+
+@function major_second() {
+  @return 9 / 8.0;
+}
+
+@function minor_second() {
+  @return 16 / 15.0;
+}
+
 // Other libraries can easily query if this function is avalible
 $modular-scale-loaded: true;
