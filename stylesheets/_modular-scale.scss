@@ -3,7 +3,7 @@
 
 // Defaults
 $ratio: golden_ratio() !default;
-$ratio-negative: $ratio !default;
+$ratio-negative: false !default;
 $base-size: 16px !default;
 $round-pixels: true !default;
 
@@ -15,19 +15,17 @@ $round-pixels: true !default;
     @return $base-size;
   }
 
-  @if $multiple > 0 {
-    $size: power($ratio, $multiple) * $base-size;
-  } @else {
-    $size: power($ratio-negative, $multiple) * $base-size;
+    // if multiple negative and negative ratio defined, set ratio to ratio-negative
+  @if $multiple < 0 and $ratio-negative {
+    $ratio: $ratio-negative;
   }
 
-  @if unit($size) == "px" and $round-pixels == true {
-    @return round($size);
+  @if unit($base-size) == "px" and $round-pixels == true {
+    @return round(power($ratio, $multiple) * $base-size);
   } @else {
-    @return $size;
+    @return power($ratio, $multiple) * $base-size;
   }
 }
-
 /////////////////////////////////////////////////////////////////////////
 
 // alias for golden_ratio()
