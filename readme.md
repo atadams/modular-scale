@@ -2,7 +2,7 @@
 
 My fork of Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale) that adds the option for a separate scale for negative muliples.
 
-I really like the idea of a modular scale but multiples lower than the base size always get too small too quickly to be of much use. To correct this, a smaller scale for negative multiples can now be defined ($ratio-negative). If set to false (the default), the standard ratio ($ratio) is used for both positive and negative values.
+I really like the idea of a modular scale but multiples lower than the base size always get too small too quickly to be of much use. To correct this, a smaller scale for negative multiples can now be defined (`$ratio-negative`). If set to `false` (the default), the standard ratio (`$ratio`) is used for both positive and negative values.
 
 Let's look at the following table comparing the values for the perfect fourth scale (1.333) for all multiples versus the perfect fourth scale for positive multiples and the major second scale (1.125) for negative multiples.
 
@@ -79,7 +79,7 @@ Let's look at the following table comparing the values for the perfect fourth sc
 	</tr>
 </table>
 
-The positive multiples for the 1.333 ratio progress as nicely—but the negative multiples get too small much too quickly. The first step goes from 16 to 12 The second step is 9. And at only the third step the value is a *very* small 7.
+The positive multiples for the 1.333 ratio progress as nicely—but the negative multiples get too small much too quickly. The first step goes from 16 to 12. The second step is 9. And at only the third step the value is a *very* small 7.
 
 Now compare this to the column where the negative ratio is 1.125. You still get the nice 1.333 ratio progression for positive multiples, and the negative multiples get smaller at a much more usable progression. The following chart illustrates this.
 
