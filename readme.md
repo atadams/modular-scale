@@ -83,7 +83,7 @@ Let's look at the following table comparing the values for the perfect fourth sc
 
 The positive multiples for the 1.333 ratio progress nicely—but the negative multiples get too small much too quick. The first step goes from 16 to 12—a very big jump. The second step is 9. And at only the third step the value is a *very* small 7.
 
-Now compare this to the column where the negative ratio is 1.125. You still get the nice 1.333 ratio progression for positive multiples, and the negative multiples get smaller at a much more usable rate. The following chart illustrates this.
+Now compare this to the column where the ratio for negative multiples is 1.125. You still get the nice 1.333 ratio progression for positive multiples, and the negative multiples get smaller at a much more usable rate. The following chart illustrates this.
 
 ![image](chart.png)
 
