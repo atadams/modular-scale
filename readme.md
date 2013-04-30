@@ -1,6 +1,6 @@
 # Sassy Modular Scale
 
-My fork of Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale) that adds the option for a separate scale for negative muliples.
+My fork of [Scott Kellum's](http://www.scottkellum.com/) ([@scottkellum](http://twitter.com/scottkellum)) and Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale) that adds the option for a separate scale for negative multiples.
 
 I really like the idea of a modular scale but it is always difficult to pick a ratio that works well for larger sizes (positive multiples) _**and**_ smaller sizes (negative multiples). If the positive multiples progress at a pleasing rate—the negative multiples get too small too quickly to be of much use. And if a ratio works for negative multiples, it seems the sizes of positive multiples increased too slowly.
 
@@ -88,10 +88,14 @@ Now compare this to the column where the negative ratio is 1.125. You still get 
 ![image](chart.png)
 
 ###Multibases and Multibases Removed
-I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be interacted with independent of each other.
+I have also removed the multibase and multiratio features because they made things much more complicated programmatically and their use, from a design standpoint, doesn't make much sense to me. Two scales laid on top of each other usually creates a stair-step effect and, IMO, goes against the idea of a smooth scale. The chart below illustrates this stair-step effect as the values for the multibase scale jump between the values of each base's scale. 
+
+![image](multibase.png)
+
+I understand that there may be a need for multiple scales on a page—but I think they should be interacted with independent of each other.
 
 ###Removed Gem Files
-To avoid issues with the Modular Scale gem, I have "de-Gemified" the code so it is now a self-contained .scss file with no dependancies.
+To avoid issues with the Modular Scale gem, I have "de-Gemified" the code so it is now a self-contained .scss file with no dependencies.
 
 ## License
 Copyright (c) 2011 [Scott Kellum](http://www.scottkellum.com/) ([@scottkellum](http://twitter.com/scottkellum)), [Adam Stacoviak](http://adamstacoviak.com/) ([@adamstac](http://twitter.com/adamstac)) and [Mason Wendell](http://thecodingdesigner.com/) ([@codingdesigner](http://twitter.com/codingdesigner))
