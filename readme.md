@@ -86,7 +86,7 @@ Now compare this to the column where the negative ratio is 1.125. You still get 
 ![image](chart.png)
 
 ###Multibases and Multibases Removed
-I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be indepentant of each other.
+I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be independent of each other.
 
 ###Removed Gem Files
 To avoid issues with the Modular Scale gem, I have "de-Gemified" the code so it is now a self-contained .scss file with no dependancies.
