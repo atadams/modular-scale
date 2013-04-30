@@ -4,6 +4,8 @@ My fork of [Scott Kellum's](http://www.scottkellum.com/) ([@scottkellum](http://
 
 I really like the idea of a modular scale but it is always difficult to pick a ratio that works well for larger sizes (positive multiples) _**and**_ smaller sizes (negative multiples). If the positive multiples progress at a pleasing rate—the negative multiples get too small too quickly to be of much use. And if a ratio works for negative multiples, it seems the sizes of positive multiples increased too slowly.
 
+This is similar to the issues discussed by Scott Bradley ([@vangogh](https://twitter.com/vangogh)) of [Vanseo Design](http://www.vanseodesign.com/) in his [How To Use Size, Scale, And Proportion In Web Design](http://www.vanseodesign.com/web-design/size-scale-proportion/) post (see his Typographic Scale illustration). 
+
 To correct this, I have modified the Modular Scale code so that a different ratio for negative multiples can now be defined (`$ratio-negative`). If set to `false` (the default), the standard ratio (`$ratio`) is used for both positive and negative values.
 
 Let's look at the following table comparing the values for the perfect fourth scale (1.333) for all multiples versus the perfect fourth scale for positive multiples and the major second scale (1.125) for negative multiples.
