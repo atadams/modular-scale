@@ -87,7 +87,7 @@ Now compare this to the column where the negative ratio is 1.125. You still get 
 
 ![image](chart.png)
 
-###Multibases and Multibases Removed
+###Multibases and Multiratios Removed
 I have also removed the multibase and multiratio features because they made things much more complicated programmatically and their use, from a design standpoint, doesn't make much sense to me. Two scales laid on top of each other usually creates a stair-step effect and, IMO, goes against the idea of a smooth scale. The chart below illustrates this stair-step effect as the values for the multibase scale jump between the values of each base's scale. 
 
 ![image](multibase.png)
