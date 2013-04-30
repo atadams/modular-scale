@@ -1,17 +1,10 @@
 # Sassy Modular Scale
-<<<<<<< HEAD
-My fork of Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale) that adds the option for a separate scale for negative muliples. 
 
-I really like the idea of a modular scale but multiples lower than the base size always get too small too quickly to be of much use. To correct this, a smaller scale for negative multiples can now be defined. 
-
-I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be indepentant of each other. 
-=======
 My fork of Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale) that adds the option for a separate scale for negative muliples.
 
 I really like the idea of a modular scale but multiples lower than the base size always get too small too quickly to be of much use. To correct this, a smaller scale for negative multiples can now be defined.
 
-I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be interacted with independent of each other.
->>>>>>> Revised readme
+I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be indepentant of each other.
 
 Multiratios also don't appear to be [working correctly](https://github.com/Team-Sass/modular-scale/issues/33) in the current version of Modular Scale.
 
