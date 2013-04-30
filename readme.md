@@ -4,10 +4,91 @@ My fork of Team-Sass' [Modular Scale](https://github.com/Team-Sass/modular-scale
 
 I really like the idea of a modular scale but multiples lower than the base size always get too small too quickly to be of much use. To correct this, a smaller scale for negative multiples can now be defined.
 
+Let's look at the following table comparing the values for the perfect fourth scale (1.333) for all multiple versus the perfect fourth scale for positive multiples and the major second scale (1.125) for negative multiples.
+
+<table cellspacing="0">
+	<tr>
+		<th>Multiple</th>
+		<th>Ratio All: 1.333</th>
+		<th>Ratio Pos: 1.333<br />Ratio Neg: 1.125</th>
+	</tr>
+	<tr>
+		<th align="center">6</th>
+		<td align="center">90</td>
+		<td align="center">90</td>
+	</tr>
+	<tr>
+		<th align="center">5</th>
+		<td align="center">67</td>
+		<td align="center">67</td>
+	</tr>
+	<tr>
+		<th align="center">4</th>
+		<td align="center">51</td>
+		<td align="center">51</td>
+	</tr>
+	<tr>
+		<th align="center">3</th>
+		<td align="center">38</td>
+		<td align="center">38</td>
+	</tr>
+	<tr>
+		<th align="center">2</th>
+		<td align="center">28</td>
+		<td align="center">28</td>
+	</tr>
+	<tr>
+		<th align="center">1</th>
+		<td align="center">21</td>
+		<td align="center">21</td>
+	</tr>
+	<tr>
+		<th align="center">0</th>
+		<td align="center">16</td>
+		<td align="center">16</td>
+	</tr>
+	<tr>
+		<th align="center">-1</th>
+		<td align="center">12</td>
+		<td align="center">14</td>
+	</tr>
+	<tr>
+		<th align="center">-2</th>
+		<td align="center">9</td>
+		<td align="center">13</td>
+	</tr>
+	<tr>
+		<th align="center">-3</th>
+		<td align="center">7</td>
+		<td align="center">11</td>
+	</tr>
+	<tr>
+		<th align="center">-4</th>
+		<td align="center">5</td>
+		<td align="center">10</td>
+	</tr>
+	<tr>
+		<th align="center">-5</th>
+		<td align="center">4</td>
+		<td align="center">9</td>
+	</tr>
+	<tr>
+		<th align="center">-6</th>
+		<td align="center">3</td>
+		<td align="center">8</td>
+	</tr>
+</table>
+
+The positive multiples for the 1.333 ratio progress as nicely—but the negative multiples get too small much too quickly. The first step goes from 16 to 12 The second step is 9. And at only the third step the value is a *very* small 7.
+
+Now compare this to the column where the negative ratio is 1.125. You still get the nice 1.333 ratio progression for positive multiples, and the negative multiples get smaller at a much more usable progression. The following chart illustrates this.
+
+![image](chart.png)
+
+###Multibases and Multibases Removed
 I have also removed the multibase and multiratio features because they made things much more complicated and their use never made much sense to me. The idea of two scales laid on top of each other, IMO, breaks the scale. I understand that there may be a need for multiple scales on a page—but I think they should be indepentant of each other.
 
-Multiratios also don't appear to be [working correctly](https://github.com/Team-Sass/modular-scale/issues/33) in the current version of Modular Scale.
-
+###Removed Gem Files
 To avoid issues with the Modular Scale gem, I have "de-Gemified" the code so it is now a self-contained .scss file with no dependancies.
 
 ## License
